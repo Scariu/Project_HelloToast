@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.BreakIterator;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,9 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Hello Toast!", Toast.LENGTH_SHORT).show();
             }
         });
-
-
-
+        botonCounter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Integer numero = Integer.parseInt(texto.getText().toString());
+                numero++;
+                texto.setText(numero.toString());
+            }
+        });
     }
-
 }
