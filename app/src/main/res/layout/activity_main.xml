@@ -27,7 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:backgroundTint="#042940"
-        android:text="Show Toast"
+        android:text="Toast"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
